@@ -1,7 +1,7 @@
-FROM centos:7
+FROM ubuntu:7
 
-RUN yum install java-11-openjdk -y
-RUN yum install net-tools -y
+RUN apt install java-11-openjdk -y
+RUN apt install net-tools -y
 ADD https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.9/bin/apache-tomcat-10.1.9.tar.gz /tmp
 WORKDIR /tmp
 RUN tar -xvzf apache-tomcat-10.1.9.tar.gz
