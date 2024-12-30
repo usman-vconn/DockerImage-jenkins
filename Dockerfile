@@ -1,4 +1,4 @@
-FROM ubuntu:7
+FROM ubuntu
 
 RUN apt install java-11-openjdk -y
 RUN apt install net-tools -y
